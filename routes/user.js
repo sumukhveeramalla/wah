@@ -44,7 +44,8 @@ router.delete("/:id", async (req, res) => {
 router.post("/:id", async(req, res) => {
     user = User.findById(req.params.id);
     res.send(user.json())
-})
+});
+
 module.exports = router
 
 
@@ -62,4 +63,3 @@ module.exports = router
 
 
 
-.call
